@@ -17,7 +17,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <div class="container">
         <div class="header__container">
           <ul class="nav">
-            <a href="#"
+            <a href="./pages/About.html"
               ><li class="nav__item">
                 <i class="fa-sharp fa-regular fa-thumbs-up"></i></li
             ></a>
@@ -25,11 +25,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               ><li class="nav__item">
                 <i class="fa-solid fa-file-lines"></i></li
             ></a>
-            <a href="#"
+            <a href="./pages/Services.html"
               ><li class="nav__item">
                 <i class="fa-solid fa-database"></i></li
             ></a>
-            <a href="#"
+            <a href="./pages/Specialists.html"
               ><li class="nav__item">
                 <i class="fa-solid fa-users"></i></li
             ></a>
@@ -37,11 +37,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               ><li class="nav__item">
                 <i class="fa-solid fa-bag-shopping"></i></li
             ></a>
-            <a href="#"
+            <a href="./pages/Gallery.html"
               ><li class="nav__item">
                 <i class="fa-solid fa-image"></i></li
             ></a>
-            <a href="#"
+            <a href="./pages/Testimonials.html"
               ><li class="nav__item">
                 <i class="fa-solid fa-pen-to-square"></i></li
             ></a>
@@ -49,7 +49,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               ><li class="nav__item">
                 <i class="fa-solid fa-comments"></i></li
             ></a>
-            <a href="#"
+            <a href="./pages/Contacts.html"
               ><li class="nav__item nav__location">
                 <i class="fa-solid fa-location-dot"></i></li
             ></a>
@@ -60,7 +60,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               Это проект не только о рождении малыша, но и о рождении мамы в
               первую очередь.
             </p>
-            <button class="btn">Подробнее</button>
+            <button class="btn">
+              <a href="./pages/About.html">Подробнее</a>
+            </button>
           </div>
         </div>
       </div>
@@ -79,7 +81,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               cumque ullam sint nulla modi possimus veritatis veniam sunt dicta
               nemo? Sint, voluptas!
             </p>
-            <button class="btn2">Об авторе</button>
+            <button class="btn2">
+              <a href="./pages/About.html">Об авторе</a>
+            </button>
           </div>
         </div>
       </div>
@@ -343,7 +347,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           />
           <div class="footer__columns">
             <div class="footer__column">
-              <a href="#" class="footer__link">
+              <a href="./pages/About.html" class="footer__link">
                 <i class="fa-regular fa-grid-2"></i>
                 О проекте
               </a>
@@ -353,7 +357,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </a>
             </div>
             <div class="footer__column">
-              <a href="#" class="footer__link">
+              <a href="./pages/Specialists.html" class="footer__link">
                 <i class="fa-solid fa-users"></i>
                 Специалисты
               </a>
@@ -367,7 +371,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
               </a>
             </div>
             <div class="footer__column">
-              <a href="#" class="footer__link">
+              <a href="./pages/Contacts.html" class="footer__link">
                 <i class="fa-solid fa-location-dot"></i>
                 Контакты
               </a>
@@ -417,6 +421,11 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         pagination: true,
         width: "70vw",
         gap: "2em",
+        breakpoints: {
+          768: {
+            perPage: 1,
+          },
+        },
       });
       splide.mount();
       testimonials.mount();
