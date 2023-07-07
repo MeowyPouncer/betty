@@ -175,6 +175,16 @@ h6 {
   padding: 20px;
 }
 
+.nav__item i {
+  font-size: 24px;
+  color: var(--green-color);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .hero {
   padding: 250px 0;
 }
@@ -605,4 +615,226 @@ h6 {
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   margin-bottom: 30px;
+}
+
+/* -------------------------- Gallery Page --------------------------- */
+
+/* ------------- Hero -------------- */
+
+.gallery__hero {
+  background-image: url("./images/testimonials-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero__gallery__container {
+  padding: 50px;
+}
+
+.hero__gallery__container p {
+  font-size: 24px;
+  color: var(--main-color);
+  line-height: 28px;
+}
+
+/* ------------- Gallery -------------- */
+
+.gallery {
+  padding: 40px 0;
+}
+.gallery__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+.gallery__item {
+  max-width: 300px;
+}
+.gallery__item img {
+  max-width: 300px;
+  border-radius: 20px;
+}
+
+/* -------------------------- Contacts Page --------------------------- */
+
+/* ------------- Contacts -------------- */
+
+.contacts {
+  padding: 40px 0;
+}
+
+.contacts__container {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+}
+.contacts__info h5 {
+  font-size: 24px;
+  color: var(--green-color);
+  margin-bottom: 10px;
+}
+
+.contacts__item {
+  margin: 12px 0;
+}
+
+.contacts__map {
+  max-width: 600px;
+}
+.contacts__map img {
+  max-width: 600px;
+  border-radius: 20px;
+}
+
+.contacts__message__container {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 150px;
+  background: var(--green-color);
+}
+
+/* -------------------------- Specialists Page --------------------------- */
+
+/* ------------- Hero -------------- */
+
+.specialists__testimonials {
+  background-image: url("./images/testimonials-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero__specialists__container {
+  padding: 50px;
+}
+
+.hero__specialists__container p {
+  font-size: 24px;
+  color: var(--main-color);
+  line-height: 28px;
+}
+
+.specialists__block {
+  padding: 40px 0;
+}
+
+.specialists__block__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.specialists__grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.specialists__item {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+.specialists__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.specialists__image {
+  max-width: 350px;
+}
+.specialists__image img {
+  max-width: 350px;
+  border-radius: 50%;
+}
+.specialists__about {
+  color: var(--green-color);
+}
+.specialists__about h6 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+.specialists__about span {
+  font-weight: 600;
+}
+.specialists__about p {
+  max-width: 80%;
+  margin: 15px auto;
+  line-height: 20px;
+}
+
+.about__hero {
+  background-image: url("./images/testimonials-hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.hero__about__container {
+  padding: 50px;
+}
+
+.hero__about__container p {
+  font-size: 24px;
+  color: var(--main-color);
+  line-height: 28px;
+}
+
+.from {
+  padding: 40px 0;
+}
+
+.from__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.from__info {
+  max-width: 30%;
+  color: var(--green-color);
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+.from__stories {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.from__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 50px;
+}
+.from__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.from__item-image {
+  max-width: 380px;
+}
+.from__item-image img {
+  max-width: 380px;
+  border-radius: 20px;
+}
+.from__item-about {
+  text-align: left;
+  line-height: 21px;
+  color: var(--green-color);
 }
