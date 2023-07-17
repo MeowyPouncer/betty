@@ -136,6 +136,14 @@ h6 {
   margin-bottom: 15px;
 }
 
+.section {
+  padding: 0 !important;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
 /* <------------------------------- Root ------------------------> */
 
 :root {
@@ -147,101 +155,142 @@ h6 {
 
 /* <------------------------------- Header ------------------------> */
 
-.header__mainpage {
-  background-image: url("./images/Header_bg.jpg");
-  background-repeat: no-repeat;
+.header {
+  background: var(--green-color);
+  position: relative;
+}
+
+.header::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -100px;
+  right: -40px;
+  width: 170px;
+  height: 240px;
+  z-index: 2;
+  background-image: url("./images/listok2.png");
   background-size: cover;
-  height: 100vh;
+}
+
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 7%;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-image: url("./images/listok1.png");
+  background-size: cover;
 }
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header__left {
+  display: flex;
   flex-direction: column;
   align-items: start;
-  justify-content: center;
-  width: 100%;
-}
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px;
-}
-.nav__item {
-  border-radius: 12px;
-  border: 2px solid var(--green-color);
-  background-color: rgba(172, 177, 160, 0.2);
-  padding: 20px;
+  padding: 110px 130px;
 }
 
-.nav__item i {
+.header__about {
+  margin-bottom: 35px;
+  color: #fff;
   font-size: 24px;
-  color: var(--green-color);
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.hero {
-  padding: 180px 30px;
+.header__left-text {
+  background: #fff;
+  padding: 70px 100px 70px 100px;
+  position: relative;
+  left: 180px;
 }
-.hero img {
+
+.header__left-text p {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+  margin-top: 15px;
+  color: var(--green-color);
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-family: "Souses";
+.header__right img {
+  height: 100vh;
+  float: right;
+}
+
+.header__bottom {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 12px;
+  border-radius: 10px;
+  background: rgba(94, 92, 80, 0.5);
+  width: max-content;
+}
+
+.header__nav ul {
+  padding: 12px 0;
+}
+
+.header__nav li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.header__nav li:last-child {
+  margin-right: 0;
+}
+
+.header__nav a {
+  background-color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: var(--green-color);
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* <------------------------------- Svoboda ------------------------> */
+
+.svoboda {
+  background: linear-gradient(
+    to top,
+    var(--green-color) 20%,
+    var(--second-color) 20%
+  );
+}
+
+.svoboda__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: 0 auto;
+}
+.svoboda__info h5 {
   font-weight: 700;
   font-size: 24px;
   line-height: 31px;
-  color: var(--green-color);
-  letter-spacing: 3px;
-  max-width: 400px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
-
-.hero button a {
-  color: var(--main-color);
+.svoboda__info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
 }
-
-/* <------------------------------- About ------------------------> */
-
-.about__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 30px;
-  padding: 0 30px;
-}
-
-.about__image {
-  width: 120%;
-  max-width: 120%;
-}
-
-.about__image img {
-  border-radius: 20px;
-  max-width: 100%;
-}
-.about__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.about__info button a {
-  color: var(--main-color);
-}
-
-.about__info p {
-  font-size: 20px;
-  line-height: 26px;
-  margin-bottom: 30px;
+.svoboda__image {
 }
 
 /* <------------------------------- Services ------------------------> */
