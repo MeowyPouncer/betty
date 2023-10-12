@@ -232,10 +232,7 @@ h6 {
   padding: 0 100px;
   color: #ACB1A0;
 }
-.nav__icon svg {
-  position: relative;
-  top: 6px;
-}
+
 .header__left-text p {
   min-width: 383px;
   font-family: "Souses", sans-serif;
@@ -259,7 +256,7 @@ h6 {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  padding: 12px;
+  padding: 10px;
   border-radius: 10px;
   background: rgba(94, 92, 80, 0.5);
   width: max-content;
@@ -267,6 +264,7 @@ h6 {
 }
 
 .header__nav ul {
+  display: flex;
   padding: 10px 0;
   text-align: center;
   color: #A7B0A7;
@@ -276,10 +274,11 @@ h6 {
   font-weight: 700;
   line-height: 130%;
   letter-spacing: 0.96px;
+  align-items: center;
 }
 
 .header__nav li {
-  display: inline-block;
+
   margin-right: 5px;
 }
 
@@ -288,11 +287,13 @@ h6 {
 }
 
 .header__nav a {
+
+  align-items: center;
+  display: flex;
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
   color: var(--green-color);
-  font-size: 18px;
   font-weight: bold;
   border-bottom: 2px solid transparent;
   transition: all 0.3s ease-in-out;
@@ -416,10 +417,10 @@ h6 {
   flex-direction: column;
   align-items: center;
   background-color: rgba(242, 235, 225, 1);
-  border-radius: 250px 250px 0px 0px;
+  border-radius: 250px 250px 0 0;
 }
 .course__item img:first-child {
-  border-radius: 250px 250px 0px 0px;
+  border-radius: 250px 250px 0 0;
   position: relative;
 }
 .course__icon {
@@ -886,8 +887,9 @@ h6 {
   left: -295px;
   bottom: -107px;
 }
-
-
+.dotted-icon {
+  margin-right: 6px;
+}
 
 
 
