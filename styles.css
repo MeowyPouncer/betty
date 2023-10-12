@@ -176,7 +176,6 @@ h6 {
   right: -40px;
   width: 170px;
   height: 240px;
-  z-index: 2;
   background-image: url("./images/listok2.png");
   background-size: cover;
 }
@@ -256,7 +255,7 @@ h6 {
 
 .header__bottom {
   position: fixed;
-  bottom: 50px;
+  bottom: 35px;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
@@ -785,11 +784,10 @@ h6 {
   height: 33.3vh;
   max-height: 300px;
   position: relative;
-  z-index: 2;
   justify-content: space-between;
   background-color: var(--green-color);
   padding-top: 8vh;
-  padding-bottom: 3.5vh;
+  padding-bottom: 4vh;
 }
 .main-container {
   max-width: 1180px;
@@ -798,6 +796,9 @@ h6 {
   height: 100%;
 }
 
+.first-section__logo {
+    margin-top: -2px;
+}
 .first-section__header {
   display: flex;
   flex-direction: column;
@@ -814,6 +815,7 @@ h6 {
   font-weight: 700;
   line-height: 130%;
   margin-left: 20px;
+  margin-top: -5px;
 
 }
 .first-section__title {
@@ -828,21 +830,63 @@ h6 {
   font-weight: 400;
   line-height: 120%; /* 28.8px */
   letter-spacing: 1.44px;
-  margin-left: 210px;
+  margin-left: 200px;
 }
 
 /*  SECOND SECTION */
-
+.cer-1-text {
+  font-family: Roboto, serif;
+  color: #7B837B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+}
 .cer-1-img {
-  max-width: 380px;
-  height: 270px;
+  width: 380px;
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  z-index: 3;
 }
 .row-1-img {
   float: right;
+  margin-top: -305px;
+  margin-right: 200px;
+  margin-left: 10px;
+  position: relative;
 }
+.row-1 {
+  margin-top: 64px;
+}
+.row-2 {
+  margin: 30px auto 10px auto;
+  max-width: 580px;
+  position: relative;
+}
+.row-3 {
+  margin-top: 30px;
+  max-width: 580px;
+  margin-left: auto;
+}
+.row-1-img::after {
+  content: "";
+  width: 180px;
+  height: 114px;
+  background-image: url(/images/branch-1.svg);
+  position: absolute;
+  bottom: -4px;
+  right: -200px;
+}
+
+.row-2::after {
+  content: "";
+  width: 244px;
+  height: 164px;
+  background-image: url(/images/branch-2.svg);
+  position: absolute;
+  left: -295px;
+  bottom: -107px;
+}
+
 
 
 
