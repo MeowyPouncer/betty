@@ -893,19 +893,42 @@ h6 {
 }
 .screen-2-inner {
   display: flex;
-  padding: 50px 0;
+  padding: 80px 0;
 }
 .screen-2-text {
   color: #7B837B;
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 130%; /* 26px */
+  line-height: 130%;
+  margin-top: 51px;
+  margin-left: 120px;
+  position: relative;
 }
-
+.screen-2-text p + p {
+  margin-top: 26px;
+}
 .screen-2-img img {
   display: block;
+  transform: translate(0, -50px);
+}
+.screen-2-text::before {
+  content: "";
+  width: 114px;
+  height: 89px;
+  background-image: url(/images/branch-3.svg);
+  position: absolute;
+  top: -114px;
+  left: -67px;
+}
+.screen-2-text::after {
+  content: "";
+  width: 196px;
+  height: 130px;
+  background-image: url(/images/branch-4.svg);
+  position: absolute;
+  top: 413px;
+  left: 384px;
 }
 
 
