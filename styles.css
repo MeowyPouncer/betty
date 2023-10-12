@@ -256,8 +256,8 @@ h6 {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 10px 12px;
+  border-radius: 20px;
   background: rgba(94, 92, 80, 0.5);
   width: max-content;
 
@@ -265,7 +265,6 @@ h6 {
 
 .header__nav ul {
   display: flex;
-  padding: 10px 0;
   text-align: center;
   color: #A7B0A7;
   font-family: Roboto, sans-serif;
@@ -287,7 +286,7 @@ h6 {
 }
 
 .header__nav a {
-
+ min-height: 44px;
   align-items: center;
   display: flex;
   background-color: #fff;
@@ -295,8 +294,6 @@ h6 {
   border-radius: 10px;
   color: var(--green-color);
   font-weight: bold;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease-in-out;
 }
 
 .help {
