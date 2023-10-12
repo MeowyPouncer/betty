@@ -39,9 +39,9 @@ html,
 body {
   height: 100%;
   width: 100%;
-  font-size: 100%;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
   line-height: 1;
-  font-size: 14px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -890,6 +890,22 @@ h6 {
 }
 .screeen-1 {
   justify-content: flex-start!important;
+}
+.screen-2-inner {
+  display: flex;
+  padding: 50px 0;
+}
+.screen-2-text {
+  color: #7B837B;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 26px */
+}
+
+.screen-2-img img {
+  display: block;
 }
 
 
