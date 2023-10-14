@@ -1194,7 +1194,7 @@ h6 {
 }
 /* CEREMONIES MEDIA QUERIES */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1000px) {
     .header__bottom {
         height: 372px;
         position: fixed;
@@ -1210,14 +1210,17 @@ h6 {
     }
     .header__bottom::before {
         content: "";
+        border-radius: 5px;
         position: absolute;
         top: 148px;
         left: -75px;
         width: 50px;
         height: 50px;
         z-index: 100;
-        background-image: url(images/menu-alt.png);
+        background-image: url(images/Menu-item.svg);
         background-size: contain;
+        background-blend-mode: multiply;
+        opacity: 0.6;
 
     }
     .header__bottom:hover {
@@ -1349,4 +1352,205 @@ h6 {
         opacity: 0.7;
         mix-blend-mode: multiply;
     }
-}
+    .screen-2-inner {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .screen-2-text {
+        font-size: 18px;
+        line-height: 130%;
+        margin-top: 10px;
+        margin-left: 0;
+        margin-bottom: 20px;
+        position: relative;
+    }
+
+    .screen-2-text p + p {
+        margin-top: 10px;
+    }
+
+    .screen-2-img img {
+        display: block;
+        max-width: 280px;
+        margin-bottom: 20px;
+        transform: translate(0);
+    }
+
+    .screen-2-text::before {
+        content: "";
+        width: 114px;
+        height: 89px;
+        background-image: url(images/branch-3.svg);
+        position: absolute;
+        top: calc(50% - 200px);
+        left: 10px;
+        mix-blend-mode: multiply;
+        opacity: 0.3;
+    }
+
+    .screen-2-text::after {
+        content: "";
+        width: 196px;
+        height: 130px;
+        position: absolute;
+        background-image: url(images/branch-4.svg);
+        display: block;
+        float: right;
+        margin-top: 0px;
+        top: calc(90% - 100px);
+        left: 10px;
+        mix-blend-mode: multiply;
+        opacity: 0.3;
+    }
+
+    .screeen-2 .main-container {
+        overflow: scroll;
+    }
+    .ceremonies-list__items {
+        gap: 10px;
+        padding-bottom: 120px
+    }
+
+    .ceremonies-list__item {
+        padding: 10px;
+    }
+
+    .ceremonies-list__item-text {
+        font-size: 14px;
+        font-style: normal;
+        line-height: 120%;
+    }
+
+    .ceremonies-list__item-header {
+        column-gap: 10px;
+    }
+
+    .ceremonies-list__item-title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 120%;
+    }
+
+    /* SCREEN 4 */
+
+    .screeen-4 .main-container {
+        height: 90vh;
+    }
+
+    .cer-4-row-2 {
+        max-width: 780px;
+        margin-bottom: 31px;
+        margin-right: 0;
+    }
+
+    .cer-4-row-1 {
+        margin-bottom: 20px;
+    }
+
+    .cer-4-row-2, .cer-4-row-3-col-1 {
+        line-height: 120%;
+    }
+
+    .cer-4-row-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1003px;
+        margin-bottom: 0;
+    }
+
+    .cer-4-row-3-col-1 {
+        max-width: 480px;
+    }
+
+    .cer-4-row-3-col-2 {
+        font-family: Pacifico, sans-serif;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 1.44px;
+        margin-bottom: 25px;
+    }
+
+    .cer-4-row-4 {
+        gap: 18px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        bottom: 35px;
+    }
+
+    .cer-4-row-2::after {
+        content: "";
+        width: 220px;
+        height: 160px;
+        background-image: url(images/branch-5.svg);
+        position: absolute;
+        top: 1px;
+        right: 22px;
+    }
+
+    .cer-4-row-3::after {
+        content: "";
+        width: 196px;
+        height: 130px;
+        background-image: url(images/branch-6.svg);
+        position: absolute;
+        bottom: 103px;
+        left: 20px;
+    }
+
+    /* SCREEN 5 */
+
+    .cer-5-inner {
+        display: flex;
+        padding-top: 20px;
+    }
+
+    .screeen-5 .main-container {
+        height: 76.5vh;
+    }
+
+    .cer-5-inner__right-row-1 {
+        color: #7B837B;
+        font-family: Pacifico, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 120%;
+        letter-spacing: 1.44px;
+        margin-bottom: 10px;
+        margin-top: -4px;
+        max-width: 438px;
+    }
+
+    .cer-5-inner__right {
+        display: flex;
+        flex-direction: column;
+        row-gap: 29px;
+        color: #7B837B;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        margin-left: 120px;
+    }
+
+    .cer-5-inner__right-row-2 {
+        max-width: 438px;
+    }
+
+    .cer-5-inner__right::after {
+        content: "";
+        width: 210px;
+        height: 133px;
+        background-image: url(images/branch-7.svg);
+        display: block;
+        position: relative;
+        align-self: flex-end;
+        top: 33px;
+        right: 100px;
+}   }
