@@ -5,9 +5,12 @@ document.addEventListener('DOMContentLoaded', function () {
         header.addEventListener('click', function () {
             const text = this.parentElement.querySelector('.ceremonies-list__item-text');
             const buttonIcon = this.querySelector('.ceremonies-list__button img');
+
+
             if (text.style.maxHeight) {
                 text.style.maxHeight = null;
                 buttonIcon.src = 'images/faq-button-plus.svg';
+
 
             } else {
                 text.style.maxHeight = text.scrollHeight + 'px';
@@ -16,3 +19,4 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+

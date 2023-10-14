@@ -272,7 +272,6 @@ h6 {
     border-radius: 20px;
     background: rgba(94, 92, 80, 0.5);
     width: max-content;
-
 }
 
 .header__nav ul {
@@ -824,7 +823,7 @@ h6 {
         grid-template-columns: 1fr;
     }
 }
-
+/* SCREEN */
 
 .first-section {
     height: 33.3vh;
@@ -930,7 +929,7 @@ h6 {
     content: "";
     width: 180px;
     height: 114px;
-    background-image: url(/images/branch-1.svg);
+    background-image: url(images/branch-1.svg);
     position: absolute;
     bottom: -4px;
     right: -200px;
@@ -940,7 +939,7 @@ h6 {
     content: "";
     width: 244px;
     height: 164px;
-    background-image: url(/images/branch-2.svg);
+    background-image: url(images/branch-2.svg);
     position: absolute;
     left: -295px;
     bottom: -107px;
@@ -998,7 +997,7 @@ h6 {
     content: "";
     width: 114px;
     height: 89px;
-    background-image: url(/images/branch-3.svg);
+    background-image: url(images/branch-3.svg);
     position: absolute;
     top: -114px;
     left: -67px;
@@ -1008,7 +1007,7 @@ h6 {
     content: "";
     width: 196px;
     height: 130px;
-    background-image: url(/images/branch-4.svg);
+    background-image: url(images/branch-4.svg);
     display: block;
     float: right;
     margin-top: 101px;
@@ -1125,7 +1124,7 @@ h6 {
     content: "";
     width: 220px;
     height: 160px;
-    background-image: url(/images/branch-5.svg);
+    background-image: url(images/branch-5.svg);
     position: absolute;
     top: 1px;
     right: 22px;
@@ -1135,7 +1134,7 @@ h6 {
     content: "";
     width: 196px;
     height: 130px;
-    background-image: url(/images/branch-6.svg);
+    background-image: url(images/branch-6.svg);
     position: absolute;
     bottom: 103px;
     left: 20px;
@@ -1186,10 +1185,153 @@ h6 {
     content: "";
     width: 210px;
     height: 133px;
-    background-image: url(/images/branch-7.svg);
+    background-image: url(images/branch-7.svg);
     display: block;
     position: relative;
     align-self: flex-end;
     top: 33px;
     right: 100px;
+}
+/* CEREMONIES MEDIA QUERIES */
+
+@media screen and (max-width: 320px) {
+    .header__bottom {
+        height: 372px;
+        position: fixed;
+        bottom: 0;
+        top: 317px;
+        left: 50%;
+        transform: translateX(0%);
+        text-align: center;
+        padding: 10px 12px;
+        border-radius: 20px;
+        background: rgba(94, 92, 80, 0.5);
+
+    }
+    .header__nav ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #A7B0A7;
+        font-family: Roboto, sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 110%;
+        letter-spacing: 0.96px;
+        align-items: stretch;
+    }
+    .header__nav li {
+        margin-right: 0px;
+    }
+
+    .header__nav li:last-child {
+        margin-right: 0;
+    }
+    .header__nav a {
+        min-height: 44px;
+        align-items: center;
+        display: flex;
+        background-color: #fff;
+        padding: 10px 20px;
+        border-radius: 10px;
+        color: var(--green-color);
+        font-weight: bold;
+    }
+    .first-section {
+        height: 14vh;
+        max-height: 150px;
+    }
+    .main-container {
+        max-width: 315px;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+        box-sizing: content-box;
+    }
+
+    .first-section__logo {
+        display: flex;
+    }
+
+    .first-section__header {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .first-section__header_text {
+        color: var(--main-color);
+        font-family: Roboto, sans-serif;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        margin-left: 20px;
+        padding: 0;
+        margin-top: -3px;
+        gap: 20px;
+    }
+    .lofty-phrase {
+        margin: 0;
+        padding: 0;
+        transform: translateY(40px);
+        color: var(--green-color);
+    }
+    .cer-1-text {
+        font-family: Roboto, serif;
+        color: #7B837B;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+    }
+
+    .cer-1-img {
+        width: 275px;
+        border-top-left-radius: 200px;
+        border-top-right-radius: 200px;
+        margin-bottom: 10px;
+    }
+    .row-1-img {
+        float: right;
+        margin: 0 auto;
+        position: relative;
+        align-self: center;
+    }
+
+    .row-2 {
+        max-width: 310px;
+        position: relative;
+    }
+
+    .row-3 {
+        margin-top: 30px;
+        max-width: 310px;
+        margin-left: auto;
+    }
+
+    .row-1-img::after {
+        content: "";
+        width: 180px;
+        height: 114px;
+        background-image: url(images/branch-1.svg);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        mix-blend-mode: soft-light;
+    }
+    .row-2::after {
+        content: "";
+        width: 244px;
+        height: 164px;
+        background-image: url(images/branch-2.svg);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        opacity: 0.7;
+        mix-blend-mode: multiply;
+    }
 }
