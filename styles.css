@@ -1200,13 +1200,28 @@ h6 {
         position: fixed;
         bottom: 0;
         top: 317px;
-        left: 50%;
+        left: 100%;
         transform: translateX(0%);
         text-align: center;
         padding: 10px 12px;
         border-radius: 20px;
         background: rgba(94, 92, 80, 0.5);
+        transition: all 0.3s ease-in-out;
+    }
+    .header__bottom::before {
+        content: "";
+        position: absolute;
+        top: 148px;
+        left: -75px;
+        width: 50px;
+        height: 50px;
+        z-index: 100;
+        background-image: url(images/menu-alt.png);
+        background-size: contain;
 
+    }
+    .header__bottom:hover {
+        transform: translateX(-200px);
     }
     .header__nav ul {
         display: flex;
