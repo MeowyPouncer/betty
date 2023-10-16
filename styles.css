@@ -338,23 +338,27 @@ h6 {
 .top__about-text {
     position: relative;
     align-self: end;
-    top: -80px;
+    top: -40px;
     margin-bottom: 60px;
     font-size: 24px;
     color: #fff;
+    font-family: Pacifico, sans-serif;
+
 }
 
 .top__bottom {
     color: var(--green-color);
+    margin-top: 20px;
 }
 
 .top__bottom h4 {
     font-size: 16px;
     font-weight: 700;
     padding-bottom: 4px;
-    margin-top: 10px;
     border-bottom: 2px solid var(--green-color);
     display: inline;
+    font-family: Souses, sans-serif;
+
 }
 
 .top__bottom h5 {
@@ -375,6 +379,7 @@ h6 {
 }
 
 .story__container {
+    max-width: 1180px;
     display: flex;
     align-items: center;
     justify-content: stretch;
@@ -505,12 +510,19 @@ h6 {
     font-size: 24px;
     line-height: 31px;
     margin-bottom: 15px;
+    color: #7B837B;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+
 }
 
 .svoboda__info p {
-    font-weight: 400;
+    color: #7B837B;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
-    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%; /* 20.8px */
 }
 
 .svoboda__image {
@@ -554,6 +566,12 @@ h6 {
     align-self: start;
     margin-left: 220px;
     margin-bottom: 30px;
+    color: #FFF;
+    font-family: Pacifico, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 1.44px;
 }
 
 .photos__track {
@@ -573,6 +591,15 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.testimonials__item-info {
+    color: #7B837B;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 130%;
 }
 
 .testimonials__author {
@@ -693,10 +720,12 @@ h6 {
 
 .footer__columns {
     display: flex;
+    flex-wrap: wrap;
     align-items: start;
     justify-content: space-between;
     width: 50%;
     max-width: 50%;
+    gap: 25px;
 }
 
 .footer__column {
@@ -779,6 +808,7 @@ h6 {
 @media screen and (max-width: 770px) {
     .svoboda__container {
         flex-direction: column;
+        max-width: 80%
     }
 
     .svoboda__info {
@@ -807,26 +837,144 @@ h6 {
 }
 
 @media screen and (max-width: 550px) {
+    .header__container {
+        max-width: 520px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .header__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 30px;
+    }
+
+    .header__about {
+        margin-bottom: 35px;
+        color: #FFF;
+        font-family: Pacifico, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 31.2px */
+        letter-spacing: 1px;
+    }
+
+    .header__left-text {
+        display: flex;
+        background: #fff;
+        max-width: 520px;
+        min-height: 307px;
+        position: relative;
+        left: 2vw;
+        border-radius: 10px;
+        flex-direction: column;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        padding: 0 100px;
+        color: #ACB1A0;
+    }
+
+    .header__left-text p {
+        min-width: 383px;
+        font-family: "Souses", sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 130%;
+        margin-top: 16px;
+        color: var(--green-color);
+        margin-bottom: 20px;
+    }
+    .header_right {
+        display: flex;
+        justify-content: cente;
+    }
+    .header__right img {
+        height: auto;
+        max-width: 90vw;
+        float: right;
+    }
+
     .svoboda__image img {
         width: 230px;
         height: 380px;
     }
 
+    .testimonials__photo h5 {
+        margin-left: 30px;
+    }
+
     .testimonials__items {
         flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .testimonials__item {
-        max-width: 70%;
+        max-width: 80%;
     }
 
     .photos__track {
         grid-template-rows: repeat(8, 1fr);
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* story */
+    .container {
+        max-width: 90vw;
+    }
+
+    .story__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 450px;
+
+    }
+
+    .story__column-1 p {
+        margin-bottom: 20px;
+    }
+
+
+    .story__container img {
+        max-width: 90vw;
+    }
+
+    .story__column-2 img {
+        max-width: 85vw;
+        margin-left: 20px;
+        margin-bottom: 20px;
     }
 }
 
-/* SCREEN */
+@media screen and (max-width: 375px) {
+
+
+
+    .container {
+        max-width: 350px;
+    }
+    .story__column-2 img {
+        max-width: 90vw;
+        margin-left: 1px;
+        margin-bottom: 10px;
+    }
+    .story__container {
+        flex-direction: column;
+        gap: 50px;
+        max-width: 350px;
+    }
+}
+
+/* -------------------------- Ceremonies --------------------------- */
+/* SCREEN 1 */
 
 .first-section {
     height: 33.3vh;
@@ -1820,13 +1968,9 @@ h6 {
 
     .cer-1-img {
         max-width: 300px;
-        border-top-left-radius: 200px;
-        border-top-right-radius: 200px;
         float: none;
         margin-bottom: 10px;
         margin-left: auto;
-
-
     }
 
     .row-1 {
@@ -1854,9 +1998,6 @@ h6 {
     }
 
     .row-1-img::after {
-        content: "";
-        width: 180px;
-        height: 114px;
         background-image: url(images/branch-1.svg);
         position: absolute;
         bottom: 0;
@@ -1866,7 +2007,7 @@ h6 {
 
     .row-2::after {
 
-        left: 450px;
+        left: 350px;
         top: 80px;
         opacity: 0.7;
         mix-blend-mode: multiply;
