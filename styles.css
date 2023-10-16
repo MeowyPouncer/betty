@@ -834,10 +834,209 @@ h6 {
         gap: 40px;
         padding: 0 40px;
     }
+    .container {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
+    .header__container {
+        max-width: 750px;
+        display: flex;
+        justify-content: start;
+        flex-direction: column-reverse;
+        align-items: center;
+        position: relative;
+    }
+
+    .header__left {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 30px;
+    }
+
+    .header__about {
+        margin-bottom: 35px;
+        color: #FFF;
+        font-family: Pacifico, sans-serif;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%; /* 31.2px */
+        letter-spacing: 1px;
+        z-index: 1;
+    }
+
+    .header__left-text {
+        max-width: 95vw;
+        min-height: 350px;
+        left: 0;
+
+        padding: 25px 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        z-index: 1;
+    }
+    .header__left-text img {
+        max-width: 45vw;
+
+    }
+    .header__left-text p {
+        max-width: 40vw;
+        text-align: center;
+        font-family: "Souses", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125%;
+        padding: 15px 0;
+        color: var(--green-color);
+        margin: 0;
+    }
+    .header__right {
+        z-index: 0;
+    }
+    .header__right img {
+        height: auto;
+        max-width: 90vw;
+        float: right;
+        margin-top: 20px;
+    }
+    .header::before {
+        z-index: 2;
+        mix-blend-mode: soft-light;
+    }
+    .header::after {
+        mix-blend-mode: multiply;
+
+    }
+
+    .svoboda__image img {
+        width: 230px;
+        height: 380px;
+    }
+
+    .testimonials__photo h5 {
+        margin-left: 30px;
+    }
+
+    .testimonials__items {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .testimonials__item {
+        max-width: 80%;
+    }
+
+    .photos__track {
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .help__container {
+        max-width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+
+    .help__image img {
+        max-width: 90vw;
+        margin-top: 10px;
+    }
+    .help__about {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+
+    .top__about-text {
+        position: relative;
+        align-self: end;
+        top: 30px;
+        margin-bottom: 50px;
+        font-size: 24px;
+        font-family: Pacifico, sans-serif;
+        color: var(--green-color);
+
+    }
+
+    .top__bottom {
+        color: var(--green-color);
+        margin-top: 20px;
+    }
+
+    .top__bottom h4 {
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 4px;
+        border-bottom: 2px solid var(--green-color);
+        display: inline;
+        font-family: Souses, sans-serif;
+
+    }
+
+    .top__bottom h5 {
+
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .top__bottom p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /* story */
+
+
+    .story__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 90vw;
+        margin-top: 10px;
+
+    }
+    .story__column-1 p {
+        margin-bottom: 20px;
+    }
+
+    .story__column-1 {
+        align-items: stretch;
+    }
+    .story__column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .story__container img {
+        max-width: 90vw;
+    }
+
+    .story__column-2 img {
+        width: 500px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
 }
 
 @media screen and (max-width: 550px) {
-
     .container {
         max-width: 90vw;
         margin: 0 auto;
@@ -946,6 +1145,7 @@ h6 {
 
     .help__image img {
         max-width: 90vw;
+        margin-top: 10px;
     }
     .help__about {
         display: flex;
@@ -1004,7 +1204,7 @@ h6 {
         flex-direction: column;
         gap: 40px;
         max-width: 90vw;
-        margin-top: 40px;
+        margin-top: 10px;
 
     }
 
@@ -3345,4 +3545,5 @@ h6 {
         color: var(--green-color);
         font-weight: bold;
     }
+
 }
