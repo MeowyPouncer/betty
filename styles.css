@@ -1406,6 +1406,14 @@ h6 {
         grid-template-columns: repeat(1, 1fr);
     }
 
+    .help {
+        background: linear-gradient(
+                to bottom,
+                var(--green-color) 27%,
+                var(--second-color) 27%
+        );
+    }
+
     .help__container {
         max-width: 90vw;
         margin: 0 auto;
@@ -1431,7 +1439,7 @@ h6 {
     .top__about-text {
         position: relative;
         align-self: end;
-        top: 50px;
+        top: 20px;
         margin-bottom: 30px;
         font-size: 24px;
         font-family: Pacifico, sans-serif;
@@ -1509,6 +1517,13 @@ h6 {
 }
 
 @media screen and (max-width: 375px) {
+    .help {
+        background: linear-gradient(
+                to bottom,
+                var(--green-color) 23%,
+                var(--second-color) 23%
+        );
+    }
     .container {
         max-width: 350px;
     }
