@@ -1405,6 +1405,8 @@ h6 {
     .testimonials__items {
         flex-direction: column;
         flex-wrap: wrap;
+        align-items: center;
+        margin-left: 9px;
     }
 
     .testimonials__item {
