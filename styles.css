@@ -24,7 +24,9 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
-
+a {
+    cursor: pointer;
+}
 :focus,
 :active {
     outline: none;
@@ -882,18 +884,6 @@ h6 {
         max-width: 45vw;
 
     }
-    .header__left-text p {
-        max-width: 40vw;
-        text-align: center;
-        font-family: "Souses", sans-serif;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 125%;
-        padding: 15px 0;
-        color: var(--green-color);
-        margin: 0;
-    }
     .header__right {
         z-index: 0;
     }
@@ -1054,8 +1044,8 @@ h6 {
     .header__left {
         display: flex;
         flex-direction: column;
-        align-items: start;
-        padding: 20px 30px;
+        align-items: center;
+        padding: 20px 16px;
     }
 
     .header__about {
@@ -1084,6 +1074,7 @@ h6 {
         max-width: 45vw;
     }
     .header__left-text p {
+        min-width: 350px;
         max-width: 40vw;
         text-align: center;
         font-family: "Souses", sans-serif;
@@ -1129,7 +1120,7 @@ h6 {
 
     .photos__track {
         grid-template-rows: repeat(8, 1fr);
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .help__container {
@@ -3492,6 +3483,7 @@ h6 {
         border-radius: 20px;
         background: rgba(94, 92, 80, 0.5);
         transition: all 0.3s ease-in-out;
+        z-index: 4;
     }
 
     .header__bottom::before {

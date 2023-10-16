@@ -15,7 +15,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </head>
 <body>
 <div class="fullpage">
-    <header id="header" class="header section">
+    <header class="header section">
         <div class="header__container">
             <div class="header__left">
                 <p class="header__about">Для себя и рождения своего малыша</p>
@@ -25,7 +25,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         Это проект не только о рождении малыша, но и о рождении мамы в
                         первую очередь.
                     </p>
-                    <a href="#help"><button class="btn">От автора</button></a>
+                    <button class="btn" onclick="fullpage_api.moveTo(2)">От автора</button>
                 </div>
             </div>
             <div class="header__right">
@@ -41,19 +41,19 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                       fill="#A7B0A7"/>
                             </svg>
                             Главная</a></li>
-                        <li><a href="#help">О проекте</a></li>
+                        <li onclick="fullpage_api.moveTo(2)"><a>О проекте</a></li>
                         <li><a href="#">Специалисты</a></li>
                         <li><a href="#">Услуги</a></li>
                         <li><a href="#">Галерея</a></li>
                         <li><a href="#">Статьи</a></li>
-                        <li><a href="#testimon">Отзывы</a></li>
-                        <li><a href="#contacts">Контакты</a></li>
+                        <li><a onclick="fullpage_api.moveTo(4, 2)">Отзывы</a></li>
+                        <li><a onclick="fullpage_api.moveTo(4, 4)">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-    <div id="help" class="section help">
+    <div class="section help">
         <div class="container">
             <div class="help__container">
                 <div class="help__image">
@@ -79,7 +79,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </div>
     </div>
-    <div id="story" class="section story">
+    <div class="section story">
         <div class="container">
             <div class="story__container">
                 <div class="story__column-1">
@@ -141,7 +141,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div id="courses" class="slide">
+        <div class="slide">
             <div class="container">
                 <div class="course__container">
                     <div class="course__heading">
@@ -182,7 +182,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div id="testimon" class="slide testimon">
+        <div class="slide testimon">
             <div class="container">
                 <div class="testimonials__container">
                     <h4 class="heading">Отзывы</h4>
@@ -240,7 +240,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div id="msg" class="slide msg">
+        <div class="slide msg">
             <div class="container">
                 <div class="message__container">
                     <img alt="" src="./images/message.png"/>
@@ -301,7 +301,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div id="contacts" class="slide">
+        <div class="slide">
             <div class="container">
                 <div class="map__container">
                     <img alt="" class="map__image" src="./images/map.png"/>
@@ -313,17 +313,17 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         />
                         <div class="footer__columns">
                             <div class="footer__column">
-                                <a class="footer__link" href="#story">
+                                <a class="footer__link" onclick="fullpage_api.moveTo(2)">
                                     <i class="fa-regular fa-grid-2"></i>
                                     О проекте
                                 </a>
-                                <a class="footer__link" href="./pages/Services.html">
+                                <a class="footer__link" href="#">
                                     <i class="fa-solid fa-database"></i>
                                     Услуги
                                 </a>
                             </div>
                             <div class="footer__column">
-                                <a class="footer__link" href="./pages/Specialists.html">
+                                <a class="footer__link" href="#">
                                     <i class="fa-solid fa-users"></i>
                                     Специалисты
                                 </a>
@@ -331,13 +331,13 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                     <i class="fa-solid fa-bag-shopping"></i>
                                     Товары
                                 </a>
-                                <a class="footer__link" href="#testimon">
+                                <a class="footer__link" onclick="fullpage_api.moveTo(4, 2)">
                                     <i class="fa-solid fa-pen-to-square"></i>
                                     Отзывы
                                 </a>
                             </div>
                             <div class="footer__column">
-                                <a class="footer__link" href="#contacts">
+                                <a class="footer__link" onclick="fullpage_api.moveTo(4, 4)">
                                     <i class="fa-solid fa-location-dot"></i>
                                     Контакты
                                 </a>
