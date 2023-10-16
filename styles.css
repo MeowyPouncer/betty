@@ -808,7 +808,7 @@ h6 {
 @media screen and (max-width: 770px) {
     .svoboda__container {
         flex-direction: column;
-        max-width: 80%
+        max-width: 70%
     }
 
     .svoboda__info {
@@ -837,6 +837,11 @@ h6 {
 }
 
 @media screen and (max-width: 550px) {
+
+    .container {
+        max-width: 90vw;
+        margin: 0 auto;
+    }
     .header__container {
         max-width: 520px;
         display: flex;
@@ -844,6 +849,7 @@ h6 {
         flex-direction: column;
         align-items: center;
         position: relative;
+        margin: 0 auto;
     }
 
     .header__left {
@@ -854,6 +860,7 @@ h6 {
     }
 
     .header__about {
+
         margin-bottom: 35px;
         color: #FFF;
         font-family: Pacifico, sans-serif;
@@ -865,31 +872,29 @@ h6 {
     }
 
     .header__left-text {
+        max-width: 90vw;
+        min-height: 250px;
+        left: 0;
+        padding: 15px 10px;
         display: flex;
-        background: #fff;
-        max-width: 520px;
-        min-height: 307px;
-        position: relative;
-        left: 2vw;
-        border-radius: 10px;
-        flex-direction: column;
-        flex-shrink: 0;
         align-items: center;
         justify-content: center;
-        padding: 0 100px;
-        color: #ACB1A0;
+        gap: 0px;
     }
-
+    .header__left-text img {
+        max-width: 45vw;
+    }
     .header__left-text p {
-        min-width: 383px;
+        max-width: 40vw;
+        text-align: center;
         font-family: "Souses", sans-serif;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
-        line-height: 130%;
-        margin-top: 16px;
+        line-height: 125%;
+        padding: 15px 0;
         color: var(--green-color);
-        margin-bottom: 20px;
+        margin: 0;
     }
     .header_right {
         display: flex;
@@ -899,6 +904,10 @@ h6 {
         height: auto;
         max-width: 90vw;
         float: right;
+    }
+
+    .header::after {
+        mix-blend-mode: soft-light;
     }
 
     .svoboda__image img {
@@ -924,17 +933,78 @@ h6 {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    /* story */
-    .container {
+    .help__container {
+        max-width: 90vw;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+
+    .help__image img {
         max-width: 90vw;
     }
+    .help__about {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+
+    .top__about-text {
+        position: relative;
+        align-self: end;
+        top: 30px;
+        margin-bottom: 50px;
+        font-size: 24px;
+        font-family: Pacifico, sans-serif;
+        color: var(--green-color);
+
+    }
+
+    .top__bottom {
+        color: var(--green-color);
+        margin-top: 20px;
+    }
+
+    .top__bottom h4 {
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 4px;
+        border-bottom: 2px solid var(--green-color);
+        display: inline;
+        font-family: Souses, sans-serif;
+
+    }
+
+    .top__bottom h5 {
+
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .top__bottom p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    /* story */
+
 
     .story__container {
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
         gap: 40px;
-        max-width: 450px;
+        max-width: 90vw;
+        margin-top: 40px;
 
     }
 
@@ -942,19 +1012,32 @@ h6 {
         margin-bottom: 20px;
     }
 
+    .story__column-1 {
+        align-items: stretch;
+    }
+    .story__column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
     .story__container img {
         max-width: 90vw;
     }
 
     .story__column-2 img {
-        max-width: 85vw;
-        margin-left: 20px;
+        width: 500px;
+        margin-left: 0;
         margin-bottom: 20px;
     }
 }
 
 @media screen and (max-width: 375px) {
+    .container {
+        max-width: 350px;
+    }
     .header__container {
         max-width: 350px;
         display: flex;
@@ -1016,17 +1099,75 @@ h6 {
         height: auto;
         max-width: 90vw;
         justify-self: center;
-
         margin: 0 auto;
     }
-
-    .container {
-        max-width: 350px;
+    .header::after {
+        mix-blend-mode: soft-light;
     }
+
+    .help__container {
+        max-width: 350px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: relative;
+        gap: 30px;
+        flex-direction: column;
+    }
+
+
+    .help__image img {
+        max-width: 325px
+    }
+    .help__about {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: relative;
+    }
+
+    .top__about-text {
+        position: relative;
+        align-self: end;
+        top: 30px;
+        margin-bottom: 50px;
+        font-size: 24px;
+        font-family: Pacifico, sans-serif;
+        color: var(--green-color);
+
+    }
+
+    .top__bottom {
+        color: var(--green-color);
+        margin-top: 20px;
+    }
+
+    .top__bottom h4 {
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 4px;
+        border-bottom: 2px solid var(--green-color);
+        display: inline;
+        font-family: Souses, sans-serif;
+
+    }
+
+    .top__bottom h5 {
+        margin-top: 20px;
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .top__bottom p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
     .story__column-2 img {
-        max-width: 90vw;
-        margin-left: 1px;
-        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 0 auto 10px auto;
     }
     .story__container {
         flex-direction: column;
