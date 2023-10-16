@@ -206,6 +206,7 @@ h6 {
     height: 200px;
     background-image: url("./images/listok1.png");
     background-size: cover;
+    mix-blend-mode: soft-light;
 }
 
 .header__container {
@@ -807,8 +808,8 @@ h6 {
     }
     .photos__track {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-columns: 2fr;
         gap: 25px;
         justify-items: center;
     }
@@ -835,16 +836,17 @@ h6 {
 
     .header__container {
         display: flex;
-        max-width: 1000px;
-        justify-content: flex-end;
+        max-width: 917px;
+        justify-content: flex-start;
         align-items: center;
         position: relative;
+        overflow: hidden;
     }
 
     .header__left {
         align-items: start;
         padding: 20px 20px;
-        transform: translateX(25vw);
+        transform: translateX(10vw);
 
 
     }
@@ -852,8 +854,8 @@ h6 {
     .header__about {
         position: relative;
         margin-bottom: 35px;
-        top: 5vh;
-        left: 45vw;
+        top: 7vh;
+        left: 5vw;
         font-size: 24px;
         line-height: 130%; /* 31.2px */
     }
@@ -924,7 +926,7 @@ h6 {
         display: flex;
         align-items: center;
         position: relative;
-        gap: 100px;
+        gap: 50px;
     }
 
     .help__image img {
@@ -942,7 +944,7 @@ h6 {
     .top__about-text {
         position: absolute;
         align-self: end;
-        top: -150px;
+        top: -130px;
         margin: 0;
         margin-top: 20px;
         font-size: 24px;
@@ -1402,8 +1404,8 @@ h6 {
     }
 
     .photos__track {
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(8, 1fr);
-        grid-template-columns: repeat(1, 1fr);
     }
 
     .help {
@@ -1613,6 +1615,7 @@ h6 {
         flex-direction: column;
         align-items: start;
         position: relative;
+        margin: 0 10px;
     }
 
     .top__about-text {
@@ -1662,6 +1665,7 @@ h6 {
         flex-direction: column;
         gap: 50px;
         max-width: 350px;
+        margin: 0 10px;
     }
 }
 
@@ -3770,10 +3774,10 @@ h6 {
 
 @media screen and (max-width: 1051px) {
     .header__bottom {
-        height: 372px;
+        height: 445px;
         position: fixed;
         bottom: 0;
-        top: 317px;
+        top: 25%;
         left: 100%;
         transform: translateX(0%);
         text-align: center;
@@ -3819,6 +3823,7 @@ h6 {
 
     .header__nav li {
         margin-right: 0;
+        margin-bottom: 10px;
     }
 
     .header__nav li:last-child {
@@ -3827,13 +3832,14 @@ h6 {
 
     .header__nav a {
         min-height: 44px;
-        align-items: center;
+        align-items: flex-end;
         display: flex;
         background-color: #fff;
         padding: 10px 20px;
         border-radius: 10px;
         color: var(--green-color);
         font-weight: bold;
+        justify-content: center;
     }
 
 }
