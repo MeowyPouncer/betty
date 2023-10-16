@@ -1431,8 +1431,8 @@ h6 {
     .top__about-text {
         position: relative;
         align-self: end;
-        top: 30px;
-        margin-bottom: 50px;
+        top: 50px;
+        margin-bottom: 30px;
         font-size: 24px;
         font-family: Pacifico, sans-serif;
         color: var(--green-color);
@@ -1591,7 +1591,7 @@ h6 {
 
 
     .help__image img {
-        max-width: 325px
+        max-width: 319px
     }
     .help__about {
         display: flex;
