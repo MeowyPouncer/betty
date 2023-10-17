@@ -1318,6 +1318,13 @@ h6 {
         margin-left: 0;
         margin-bottom: 20px;
     }
+    .svoboda {
+        background: linear-gradient(
+                to top,
+                var(--green-color) 10%,
+                var(--second-color) 10%
+        );
+    }
 }
 
 @media screen and (max-width: 550px) {
@@ -1342,6 +1349,9 @@ h6 {
         padding: 20px 16px;
     }
 
+    .svoboda__container {
+        max-width: 85%;
+    }
     .header__about {
         margin-bottom: 35px;
         color: #FFF;
@@ -1395,7 +1405,7 @@ h6 {
 
     .svoboda__image img {
         width: 230px;
-        height: 380px;
+        height: 360px;
     }
 
     .testimonials__photo h5 {
@@ -1414,10 +1424,10 @@ h6 {
     }
 
     .photos__track {
+
         gap: 25px;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         justify-items: center;
     }
 
@@ -1529,9 +1539,23 @@ h6 {
         margin-left: 0;
         margin-bottom: 20px;
     }
+    .svoboda {
+        background: linear-gradient(
+                to top,
+                var(--green-color) 4%,
+                var(--second-color) 4%
+        );
+    }
 }
 
 @media screen and (max-width: 375px) {
+    .svoboda {
+        background: linear-gradient(
+                to top,
+                var(--green-color) 2.5%,
+                var(--second-color) 2.5%
+        );
+    }
     .help {
         background: linear-gradient(
                 to bottom,
@@ -1541,6 +1565,7 @@ h6 {
     }
     .container {
         max-width: 350px;
+        max-height: 95vh;
     }
     .header__container {
         max-width: 350px;

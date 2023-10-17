@@ -15,7 +15,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 </head>
 <body>
 <div class="fullpage">
-    <header class="header section">
+    <header data-anchor="section1" class="header section">
         <div class="header__container">
             <div class="header__left">
                 <p class="header__about">Для себя и рождения своего малыша</p>
@@ -43,7 +43,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                             Главная</a></li>
                         <li onclick="fullpage_api.moveTo(2)"><a>О проекте</a></li>
                         <li><a href="#">Специалисты</a></li>
-                        <li><a href="#">Услуги</a></li>
+                        <li><a href="ceremonies.html">Церемонии</a></li>
                         <li><a href="#">Галерея</a></li>
                         <li><a href="#">Статьи</a></li>
                         <li><a onclick="fullpage_api.moveTo(4, 2)">Отзывы</a></li>
@@ -53,7 +53,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </div>
     </header>
-    <div class="section help">
+    <div data-anchor="about" class="section help">
         <div class="container">
             <div class="help__container">
                 <div class="help__image">
@@ -79,7 +79,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </div>
     </div>
-    <div class="section story">
+    <div data-anchor="story" class="section story">
         <div class="container">
             <div class="story__container">
                 <div class="story__column-1">
@@ -115,7 +115,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         </div>
     </div>
     <div class="section">
-        <div class="slide svoboda">
+        <div data-anchor="freedom" class="slide svoboda">
             <div class="container">
                 <div class="svoboda__container">
                     <div class="svoboda__info">
@@ -141,7 +141,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div class="slide">
+        <div data-anchor="courses" class="slide">
             <div class="container">
                 <div class="course__container">
                     <div class="course__heading">
@@ -182,7 +182,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div class="slide testimon">
+        <div data-anchor="witness" class="slide testimon">
             <div class="container">
                 <div class="testimonials__container">
                     <h4 class="heading">Отзывы</h4>
@@ -240,7 +240,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div class="slide msg">
+        <div data-anchor="consult" class="slide msg">
             <div class="container">
                 <div class="message__container">
                     <img alt="" src="./images/message.png"/>
@@ -301,7 +301,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 </div>
             </div>
         </div>
-        <div class="slide">
+        <div data-anchor="contacts" class="slide">
             <div class="container">
                 <div class="map__container">
                     <img alt="" class="map__image" src="./images/map.png"/>
@@ -317,19 +317,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                                     <i class="fa-regular fa-grid-2"></i>
                                     О проекте
                                 </a>
-                                <a class="footer__link" href="#">
-                                    <i class="fa-solid fa-database"></i>
-                                    Услуги
-                                </a>
                             </div>
                             <div class="footer__column">
                                 <a class="footer__link" href="#">
                                     <i class="fa-solid fa-users"></i>
                                     Специалисты
                                 </a>
-                                <a class="footer__link" href="#">
+                                <a class="footer__link" href="ceremonies.html">
                                     <i class="fa-solid fa-bag-shopping"></i>
-                                    Товары
+                                    Церемонии
                                 </a>
                                 <a class="footer__link" onclick="fullpage_api.moveTo(4, 2)">
                                     <i class="fa-solid fa-pen-to-square"></i>
