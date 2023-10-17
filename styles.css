@@ -3812,10 +3812,10 @@ h6 {
 
 @media screen and (max-width: 1051px) {
     .header__bottom {
-        height: 445px;
+        height: 280px;
         position: fixed;
         bottom: 0;
-        top: 25%;
+        top: 33%;
         left: 100%;
         transform: translateX(0%);
         text-align: center;
