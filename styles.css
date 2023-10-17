@@ -1064,6 +1064,7 @@ h6 {
 
     .svoboda__info {
         margin-right: 20px;
+
     }
 
     .svoboda__info h5 {
@@ -1105,7 +1106,11 @@ h6 {
 
     .svoboda__info {
         margin-right: 0;
-        margin-bottom: 40px;
+        margin-bottom: 10px;
+
+    }
+    .svoboda__info p {
+        line-height: 110%;
     }
 
     .course__items {
