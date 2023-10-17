@@ -224,7 +224,7 @@
 
 <div class="header__bottom">
     <nav class="header__nav">
-        <ul id="fpMenu">
+        <ul>
             <li><a href="index.html">
                 <svg class="dotted-icon" fill="none" height="24" viewBox="0 0 24 24" width="24"
                      xmlns="http://www.w3.org/2000/svg">
@@ -251,7 +251,8 @@
         new fullpage(".fullpage", {
             autoScrolling: true,
             scrollHorizontally: true,
-            menu: '#fpMenu'
+            animateAnchor: false,
+            lazyLoading: true,
         });
     });
 </script>
