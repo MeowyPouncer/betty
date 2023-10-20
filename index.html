@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -358,6 +358,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
         </div>
     </div>
+    </div>
 </div>
 </body>
 <script
@@ -371,6 +372,14 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             autoScrolling: true,
             scrollHorizontally: true,
         });
+
+        const url = new URL(window.location.href);
+        const params = url.searchParams;
+
+        const section = params.get('section');
+        const slide = params.get('slide');
+        console.log(section, slide);
+        fullpage_api.silentMoveTo(section, slide);
     });
 </script>
 </html>

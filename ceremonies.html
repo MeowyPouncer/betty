@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -232,10 +232,11 @@
                           fill="#A7B0A7"/>
                 </svg>
                 Главная</a></li>
-            <li><a href="index.html#about">О проекте</a></li>
+            <li><a href="index.html?section=about">О проекте</a></li>
             <li><a href="ceremonies.html">Церемонии</a></li>
-            <li><a href="index.html#bot/witness">Отзывы</a></li>
-            <li><a href="index.html#bot/contacts">Контакты</a></li>
+            <li><a href="index.html?section=bot&slide=witness">Отзывы</a></li>
+            <li><a href="index.html?section=bot&slide=contacts">Контакты</a></li>
+
         </ul>
     </nav>
 </div>
@@ -251,8 +252,6 @@
         new fullpage(".fullpage", {
             autoScrolling: true,
             scrollHorizontally: true,
-            animateAnchor: false,
-            lazyLoading: true,
         });
     });
 </script>
